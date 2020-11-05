@@ -2,7 +2,7 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 
-const PORT = 3000; // process.env.PORT ?
+const PORT = process.env.PORT || 3000;
 
 // will share any static html files with the browser
 app.use( express.static('public') );
